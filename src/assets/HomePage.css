@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "Excon-Thin";
+  src: url("../assets/fonts/Excon-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Excon-Bold";
+  src: url("../assets/fonts/Excon-Black.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora-Bold";
+  src: url("../assets/fonts/Sora-Bold.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora-ExtraLight";
+  src: url("../assets/fonts/Sora-ExtraLight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+/* Общий контейнер */
+.home-container {
+  background-color: #ECE7DA;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Вертикальные линии */
+.home-container::before,
+.home-container::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: black;
+}
+
+.home-container::before {
+  left: 5%;
+}
+
+.home-container::after {
+  right: 5%;
+}
+
+/* Главный экран */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+/* NOTHING (по центру) */
+.home-title {
+  font-size: 200px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-family: "Excon-Thin", sans-serif;
+  color: black;
+  margin-bottom: -20px;
+}
+
+/* ALL OR NONE */
+.home-subtitle {
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-family: "Excon-Thin", sans-serif;
+  color: black;
+  margin-bottom: 30px;
+}
+
+/* Кнопка TOKEN */
+.home-button {
+  padding: 25px 140px;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 40px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background-color: black;
+  color: #ECE7DA;
+  transform: scale(1.05);
+}
+
+.home-button:active {
+  transform: scale(0.95);
+}
+
+/* OUR STORY */
+.story-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 150px 10%;
+  position: relative;
+}
+
+/* Левая часть (OUR STORY) */
+.story-left {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Заголовок OUR STORY */
+.story-left h2 {
+  font-family: "Excon-Bold", sans-serif;
+  color: black;
+  line-height: 0.9;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.story-left h2 span {
+  font-size: 90px;
+  display: block;
+}
+
+/* OUR STORY */
+.story-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 150px 10%;
+  position: relative;
+}
+
+/* Левая часть (OUR STORY) — СТАТИЧНАЯ */
+.story-left {
+  flex: 1;
+  max-width: 400px;
+  position: sticky;
+  top: 100px; /* Фиксируем блок при скролле */
+  height: fit-content; /* Чтобы текст не выходил за границы */
+}
+
+/* OUR STORY */
+.story-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 150px 10%;
+  position: relative;
+}
+
+/* Левая часть (OUR STORY) — СТАТИЧНАЯ */
+.story-left {
+  flex: 1;
+  max-width: 400px;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+/* Заголовок OUR STORY */
+.story-left h2 {
+  font-family: "Excon-Bold", sans-serif;
+  color: black;
+  line-height: 1;
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+/* Описание */
+.story-left p {
+  font-size: 18px;
+  font-family: "Sora-ExtraLight", sans-serif;
+  color: black;
+  line-height: 1.5;
+}
+
+/* Кнопка */
+.story-left .home-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  font-family: "Sora-Bold", sans-serif;
+  border: none;
+  border-radius: 15px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.story-left .home-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Правая часть */
+.story-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 150px;
+}
+
+/* Вертикальная линия */
+.timeline {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: black;
+}
+
+/* Блоки */
+.story-box {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin-left: 80px;
+  margin-bottom: 60px;
+  position: relative;
+  padding-top: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/* Последний блок (новый) */
+.story-box:last-child {
+  margin-bottom: 0;
+}
+
+/* Разрез между заголовком и текстом */
+.story-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Sora-Bold", sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.story-box h3::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 60px;
+  height: 6px;
+  background-color: #ECE7DA;
+  border-radius: 10px;
+}
+
+/* Текст внутри блоков */
+.story-box p {
+  font-size: 18px;
+  font-family: "Sora-ExtraLight", sans-serif;
+  line-height: 1.8;
+}
+
+/* Круги на линии */
+.circle {
+  position: absolute;
+  left: -30px;
+  top: 30px;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* ФИКСИРОВАННЫЙ БЛОК С КНОПКАМИ */
+.fixed-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: #ECE7DA;
+  z-index: 1000;
+  border-bottom: 2px solid black;
+}
+
+/* Стили для кнопок */
+.fixed-buttons-container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Sora-Bold", sans-serif;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fixed-buttons-container a:hover {
+  background-color: black;
+  color: white;
+}
+

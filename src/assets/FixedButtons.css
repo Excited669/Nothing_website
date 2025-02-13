@@ -1,0 +1,24 @@
+.fixed-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ECE7DA;
+  border-bottom: 2px solid black;
+  z-index: 1000;
+}
+
+.fixed-buttons a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Excon-Thin", sans-serif;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+}

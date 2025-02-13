@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Excon-Bold";
+    src: url("../assets/fonts/Excon-Black.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Контейнер */
+  .pitch-container {
+    background-color: #ECE7DA;
+    padding: 100px 10%;
+    text-align: center;
+  }
+  
+  /* Заголовок */
+  .pitch-title {
+    font-size: 100px;
+    font-family: "Excon-Bold", sans-serif;
+    color: black;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  /* Текст */
+  .pitch-text {
+    font-size: 30px;
+    color: black;
+    margin-top: 0px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Основное содержимое */
+  .pitch-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  /* Левая часть */
+  .pitch-left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .pitch-subtitle {
+    font-size: 125px;
+    font-family: "Excon-Bold", sans-serif;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .pitch-left p {
+    font-size: 30px;
+    color: black;
+  }
+  
+  /* Кнопка */
+  .pitch-button {
+    margin-top: 20px;
+    padding: 15px 150px;
+    font-size: 20px;
+    font-family: "Excon-Bold", sans-serif;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pitch-button:hover {
+    background-color: black;
+    color: #ECE7DA;
+    transform: scale(1.05);
+  }
+  
+  .pitch-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Анимация монеты */
+  .pitch-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pitch-image {
+    width: 1000px;
+    height: 1000px;
+    animation: floatAnimation 3s ease-in-out infinite;
+  }
+  
+  /* Проверочная анимация */
+  @keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+
+  /* Анимация монеты с эффектом свечения */
+.pitch-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Для управления позиционированием */
+  }
+  
+  .pitch-image {
+    width: 625px;
+    height: auto;
+    animation: floatAnimation 3s ease-in-out infinite, glowAnimation 1.5s ease-in-out infinite;
+    z-index: 1; /* Поднимем монету над фоном */
+  }
+  
+  /* Анимация плавного подъема и спуска монеты */
+  @keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+  
+
+  
+
+  
+  

@@ -1,0 +1,77 @@
+.hero-container {
+    text-align: center;
+    background: #f5f1e8;
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  
+  .hero-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .bold {
+    font-weight: 900;
+  }
+  
+  .hero-text {
+    margin-top: 10px;
+    font-size: 18px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+  }
+  
+  .hero-text-block {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .pitch-title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .pitch-text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .hero-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .hero-button:hover {
+    background: #444;
+  }
+  
+  .hero-image {
+    width: 250px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-text-block {
+      text-align: center;
+    }
+  }
+  

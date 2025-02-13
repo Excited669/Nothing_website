@@ -1,0 +1,57 @@
+.contact-container {
+    text-align: center;
+    background: #f5f1e8;
+    padding: 50px 20px;
+    margin-top: 50px;
+  }
+  
+  .contact-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .contact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-box {
+    background: #e6dfd1;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-box h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact-button:hover {
+    background: #444;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .contact-boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
